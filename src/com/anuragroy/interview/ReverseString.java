@@ -5,10 +5,11 @@ import java.util.Stack;
 public class ReverseString {
     public static void main(String args[]){
         String str = "MyJava";
+        System.out.println("Original String: " + str);
         reverseByInBuiltMethod(str);
         reverseByIteration(str);
-        System.out.println("Reverse By Recursion: "+reverseByRecursion(str));
         reverseByStack(str);
+        System.out.println("Reverse By Recursion: "+reverseByRecursion(str));
     }
 
     private static void reverseByInBuiltMethod(String str){
@@ -23,6 +24,19 @@ public class ReverseString {
             System.out.print(chars[i]);
         System.out.println();
     }
+
+    private static void reverseByStack(String str){
+        Stack<Character> tempStack = new Stack<>();
+        for(int i=0; i<str.length(); i++){
+            tempStack.push(str.charAt(i));
+        }
+        StringBuilder sb = new StringBuilder();
+        while(!tempStack.isEmpty()){
+            sb.append(tempStack.pop());
+        }
+        System.out.println("Reverse By Stack: " + sb.toString());
+    }
+
 
     private static String reverseByRecursion(String str){
         if(str == null || str.length()<=1){
@@ -40,16 +54,4 @@ public class ReverseString {
         6th Call —>   recursiveMethod(“a”) + “v”) + “a”) + “J”)+”y”) + “M”
         After 6th call, it Stops calling itself. Because the length of passed string is 1. So, finally it returns “avaJyM”
      */
-
-    private static void reverseByStack(String str){
-        Stack<Character> tempStack = new Stack<>();
-        char [] chars = str.toCharArray();
-        for(int i=0; i<=chars.length-1; i++){
-            tempStack.push(chars[i]);
-        }
-        System.out.print("Reverse By Stack: ");
-        while(!tempStack.isEmpty()){
-            System.out.print(tempStack.pop());
-        }
-    }
 }
