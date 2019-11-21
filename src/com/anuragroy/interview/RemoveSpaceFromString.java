@@ -2,7 +2,8 @@ package com.anuragroy.interview;
 
 public class RemoveSpaceFromString {
     public static void main(String args[]){
-        String str = "  Hel  lo World,   o r, My Wo  rld";
+        String str = "  Hel  lo World-   o r- My Wo  rld";
+        System.out.println("Original String: " + str);
         removeByRegex(str);
         removeByIteration(str);
 
