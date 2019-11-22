@@ -1,8 +1,10 @@
+/* Reverse a string in java */
 package com.anuragroy.interview;
 
 import java.util.Stack;
 
 public class ReverseString {
+
     public static void main(String args[]){
         String str = "MyJava";
         System.out.println("Original String: " + str);
@@ -12,10 +14,12 @@ public class ReverseString {
         System.out.println("Reverse By Recursion: "+reverseByRecursion(str));
     }
 
+
     private static void reverseByInBuiltMethod(String str){
         StringBuilder sb = new StringBuilder(str);
         System.out.println("Reverse By reverse() method: " + sb.reverse());
     }
+
 
     private static void reverseByIteration(String str){
         char [] chars = str.toCharArray();
@@ -24,6 +28,7 @@ public class ReverseString {
             System.out.print(chars[i]);
         System.out.println();
     }
+
 
     private static void reverseByStack(String str){
         Stack<Character> tempStack = new Stack<>();

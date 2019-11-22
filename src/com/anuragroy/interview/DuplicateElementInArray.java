@@ -1,9 +1,10 @@
+/* Find duplicate elements in an array */
 package com.anuragroy.interview;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class ArrayDuplicates {
+public class DuplicateElementInArray {
 
     public static void main(String[] args) {
         int[] inputArray = new int[]{111, 333, 555, 777, 333, 444, 555};

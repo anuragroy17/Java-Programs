@@ -1,6 +1,8 @@
+/* Remove all white spaces from a string in java */
 package com.anuragroy.interview;
 
 public class RemoveSpaceFromString {
+
     public static void main(String args[]){
         String str = "  Hel  lo World-   o r- My Wo  rld";
         System.out.println("Original String: " + str);
@@ -9,10 +11,12 @@ public class RemoveSpaceFromString {
 
     }
 
+
     private static void removeByRegex(String str){
         str = str.replaceAll("\\s", "");
         System.out.println("After Regex Replacement: " + str);
     }
+
 
     private static void removeByIteration(String str){
         char [] chars = str.toCharArray();

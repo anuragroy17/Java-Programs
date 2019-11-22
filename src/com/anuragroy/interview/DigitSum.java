@@ -1,3 +1,4 @@
+/* Find sum of all digits of a number in java */
 package com.anuragroy.interview;
 
 public class DigitSum {

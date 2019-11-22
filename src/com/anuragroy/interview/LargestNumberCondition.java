@@ -13,7 +13,7 @@ public class LargestNumberCondition {
     static int getLLessThanN(int number, int digit){
         //Converting digit to char
         char c = Integer.toString(digit).charAt(0);
-        
+
         //Decrementing number & checking whether it contains digit
         for (int i = number; i > 0; --i) {
             if(Integer.toString(i).indexOf(c) == -1) {

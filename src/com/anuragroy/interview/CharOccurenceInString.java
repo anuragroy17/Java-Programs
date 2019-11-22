@@ -1,8 +1,7 @@
+/* WAP to count occurrences of each character in a string in java */
 package com.anuragroy.interview;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public class CharOccurenceInString {
     public static void main(String args[]){
