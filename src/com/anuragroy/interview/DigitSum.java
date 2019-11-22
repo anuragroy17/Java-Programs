@@ -8,17 +8,17 @@ public class DigitSum {
     }
 
     private static int sumOfDigitsByIteration(int num) {
-        int sum = 0;
+        int result = 0;
 
         while(num>0){
-            sum += num%10;
+            result += num%10;
             num /= 10;
         }
 
-        return sum;
+        return result;
     }
 
-    static int sum = 0;
+    static int sum = 0; //required for recursion
     private static int sumOfDigitsByRecursion(int num) {
         if(num == 0){
             return sum;

@@ -1,6 +1,5 @@
 package com.anuragroy.interview;
 
-import java.text.ParseException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -33,7 +32,7 @@ public class IntegerToRoman {
         return thousands[(num / 1000)]     //Consider 3925 => 3925/1000 = 3.925 => int = 3
                 +hundreds[(num%1000)/100]  //Consider 3925 => 3925%1000 => (3925 - 3000)Remainder is 925 => 925/100 = 9.25 => int = 9
                 +tens[(num%100)/10]        //Consider 3925 => 3925%100 => (3925 - 3900)Remainder is 25 => 25/10 = 2.5 => int = 2
-                +units[(num%10)];           //Consider 3925 => 3925%10 => (3925 - 3920)Remainder is 5
+                +units[(num%10)];          //Consider 3925 => 3925%10 => (3925 - 3920)Remainder is 5
     }
 
 }
