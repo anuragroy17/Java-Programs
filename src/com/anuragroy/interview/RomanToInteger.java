@@ -11,13 +11,11 @@ public class RomanToInteger {
         try {
             System.out.println("Please a valid Roman Numeral ");
             String roman = sc.nextLine();
-            sc.nextLine();
             System.out.println("Value in Numerals: "+ romanToInt(roman));
         } catch (Exception e) {
             System.out.println("Invalid Roman Numeral");
         }
 
-        sc.nextLine();
         sc.close();
     }
 

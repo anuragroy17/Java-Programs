@@ -1,6 +1,7 @@
 package com.anuragroy.interview;
 
 import java.text.ParseException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class IntegerToRoman {
@@ -16,11 +17,10 @@ public class IntegerToRoman {
             }else{
                 System.out.println("Value not in Range");
             }
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid Input");
         }
 
-        sc.nextLine();
         sc.close();
     }
 
